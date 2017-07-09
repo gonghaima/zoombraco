@@ -49,3 +49,8 @@ Having a play around is encouraged, I'm always looking for feedback.
 The demo website login details are:
  - Username : zoombraco
  - Password : password
+
+### Known Issues
+After all package restored, ZoombracoDemo.Web project should be set as startup project.
+There will be an issue with missing Our.Umbraco.Ditto.dll.
+The Our.Umbraco.Ditto.dll can be found & added from ZoombracoDemo.Logic project
