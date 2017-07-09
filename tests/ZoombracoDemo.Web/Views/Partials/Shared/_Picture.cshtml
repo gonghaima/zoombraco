@@ -1,0 +1,18 @@
+﻿@using Zoombraco.Models
+@using ZoombracoDemo.Logic.Helpers
+@model Image
+
+@if (Model != null)
+{
+    string alias = (string)ViewData["alias"];
+    string media = (string)ViewData["media"] ?? "(min-width: 992px)";
+
+    // Mobile is hi-res by default.
+    string src = Model.GetCropUrl(alias, true, true, 60);
+    string srcM = Model.GetCropUrl(ImageCropperConstants.ToM(alias));
+
+    <picture>
+        <source media="@media" srcset="@srcM" />
+        <img srcset="@src" alt="@Model.Name">
+    </picture>
+}
