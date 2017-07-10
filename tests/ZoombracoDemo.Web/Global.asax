@@ -1,1 +1,2 @@
-﻿<%@ Application Inherits="Zoombraco.ZoombracoGlobal" Language="C#" %>
+﻿<%@ Application Inherits="Umbraco.Web.UmbracoApplication" Language="C#" %>
+          

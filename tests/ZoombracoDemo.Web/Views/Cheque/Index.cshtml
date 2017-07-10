@@ -1,0 +1,14 @@
+﻿@model ZoombracoDemo.Logic.Models.NestedCheque
+
+<h1>Check Details</h1>
+<h2>Check Name : @Model.ChequeName</h2>
+
+<div>
+    @Model.ChequeDate.ToString("dd/MM/yyyy")
+    <br />
+    $ @Model.ChequeAmount
+    <br />
+    @Model.ChequePay
+</div>
+<br />
+<br />
